@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/caa3a2e1cccd8315-s.p.853070df.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist Fallback';
+  src: local('Arial');
+  ascent-override: 95.94%;
+  descent-override: 28.16%;
+  line-gap-override: 0%;
+  size-adjust: 104.76%;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/797e433ab948586e-s.p.dbea232f.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist Mono Fallback';
+  src: local('Arial');
+  ascent-override: 74.67%;
+  descent-override: 21.92%;
+  line-gap-override: 0%;
+  size-adjust: 134.59%;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  min-height: 100%;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+::selection {
+  background: #5c7a5c;
+  color: #000;
+}
+
+.noise {
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+  opacity: 0.03;
+}
+
+/* Slider rail */
+.ruler-tick {
+  position: absolute;
+  width: 1px;
+  background: rgba(255,255,255,0.18);
+}
+.ruler-tick.major {
+  background: rgba(92,122,92,0.6);
+}

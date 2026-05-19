@@ -1,0 +1,18 @@
+# Dependências
+app/node_modules/
+node_modules/
+
+# Build
+app/dist/
+
+# HTTrack (captura do site original - não precisa ir pro repo)
+Site Vini/
+Site Vini.whtt
+backblue.gif
+fade.gif
+index.html
+
+# VS Code / Claude
+.claude/
+.vscode/
+*.local.json
