@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/icond007.svg" />
+    <link rel="preload" as="image" href="/assets/18-29.png" />
+    <link rel="preload" as="image" href="/assets/30-39.png" />
+    <link rel="preload" as="image" href="/assets/40-49.png" />
+    <link rel="preload" as="image" href="/assets/50+.png" />
+    <title>Operação Calistenia Militar - Calisthenics Assessment</title>
+    <meta name="description" content="Tactical military-themed calisthenics fitness assessment" />
+
+    <!-- Facebook Pixel -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1427256302496443');
+    </script>
+    <!-- Facebook CAPI – PageView via fetch (deduplicado pelo eventId) -->
+    <script>
+      (function() {
+        var eventId = (typeof crypto !== 'undefined' && crypto.randomUUID) ? crypto.randomUUID() : Math.random().toString(36).slice(2);
+        if (window.fbq) window.fbq('track', 'PageView', {}, { eventID: eventId });
+        var cookies = document.cookie.split(';').reduce(function(acc, c) { var p = c.trim().split('='); if (p[0]) acc[p[0]] = p[1]; return acc; }, {});
+        var payload = { data: [{ event_name: 'PageView', event_time: Math.floor(Date.now()/1000), event_id: eventId, action_source: 'website', event_source_url: location.href, user_data: { client_user_agent: navigator.userAgent } }] };
+        if (cookies['_fbp']) payload.data[0].user_data.fbp = cookies['_fbp'];
+        if (cookies['_fbc']) payload.data[0].user_data.fbc = cookies['_fbc'];
+        fetch('https://graph.facebook.com/v19.0/1427256302496443/events?access_token=EAAUFUGhl0pcBRXZAhQY4VVJ4amaVw6hPPnq3NSfsixgLyFS0SNmxHojnKT5BNzSpUt3D5beTZBizVERaW1OuzV4h8oycodXMYhIczbgxvL731sZCnLgrwQQdjZAJp5Atr18wzUE1jiptYv6jHFfyt766qNgAQYPyZBO5wQU8LeCSG2NZAGC9mNjMRKCcevBQZDZD', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }).catch(function(){});
+      })();
+    </script>
+
+    <!-- TikTok Pixel -->
+    <script>
+      !function (w, d, t) {
+        w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+        ttq.load('D7FE66RC77UC3GGKKS4G');
+        ttq.page();
+      }(window, document, 'ttq');
+    </script>
+
+    <!-- UTMify -->
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+  </head>
+  <body class="font-sans antialiased bg-[#0a0a0a] text-white">
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1427256302496443&ev=PageView&noscript=1" alt="" /></noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
